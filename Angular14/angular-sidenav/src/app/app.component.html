@@ -1,0 +1,12 @@
+<mat-drawer-container class="bs-container" autosize>
+  <mat-drawer #drawer class="bs-sidenav" mode="side">
+    <p>Side Nav Drawer</p>
+  </mat-drawer>
+
+  <div class="bs-sidenav-content">
+    <button type="button" mat-button (click)="drawer.toggle()">
+      Toggle sidenav btn
+    </button>
+    <router-outlet></router-outlet>
+  </div>
+</mat-drawer-container>
